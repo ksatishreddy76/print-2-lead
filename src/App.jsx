@@ -25,7 +25,7 @@ function App() {
               marginLeft: "20px",
             }}
           >
-            <li>Banners & Signage</li>
+            <li>Banners & Signages</li>
             <li>Business Cards & Stationery</li>
             <li>Flyers, Brochures & Posters</li>
             <li>Custom Printing Solutions</li>
