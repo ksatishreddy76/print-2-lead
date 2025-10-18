@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <div className="main-screen">
+      <div className="main-max">
+        <h1>Print 2 Lead</h1>
+        <h3>
+          Comprehensive Printing & Signage Services – Delivered to Your Doorstep
+        </h3>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          We offer a full range of high-quality printing services, covering
+          everything from business cards to large-format prints and custom
+          signage. In partnership with trusted printing vendors, we ensure that
+          no matter your printing needs, we can provide the perfect solution
+          tailored just for you.
         </p>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            textAlign: "left",
+          }}
+        >
+          <ul
+            style={{
+              marginLeft: "20px",
+            }}
+          >
+            <li>Banners & Signage</li>
+            <li>Business Cards & Stationery</li>
+            <li>Flyers, Brochures & Posters</li>
+            <li>Custom Printing Solutions</li>
+            <li>Fast Turnaround & Delivery</li>
+          </ul>
+        </div>
+        <p>
+          We handle every aspect of your printing project, saving you valuable
+          time by managing the entire process, from design to delivery. No
+          matter what you need, we’ve got you covered, and we’ll make sure your
+          print products are delivered directly to your doorstep with the utmost
+          care and efficiency.
+        </p>
+        <div>
+          <p>
+            <u>For more details contact us on</u>
+          </p>
+          <p>Gmail : print2lead@gmail.com</p>
+          <p>Phone : +91 7386324298</p>
+        </div>
+        <div>
+          <p>🌐 Website launching soon: print2lead.in</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
