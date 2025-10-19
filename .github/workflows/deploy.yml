@@ -24,6 +24,16 @@ jobs:
       - name: Build project
         run: npm run build
 
+      # Debug step to ensure the FTP server value is present (will not print the secret)
+      - name: Check FTP_SERVER variable
+        run: |
+          if [[ -z "${{ secrets.FTP_SERVER }}" ]]; then
+            echo "FTP_SERVER is empty or missing"
+            exit 1
+          else
+            echo "FTP_SERVER is present"
+          fi
+
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
