@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   base: "./",
   plugins: [
@@ -10,19 +9,10 @@ export default defineConfig({
         plugins: [["babel-plugin-react-compiler"]],
       },
     }),
+    // Remove tailwindcss() from here
   ],
-  build: {
-    outDir: "dist", // default, but you can rename if needed
-    assetsDir: "assets", // keeps JS/CSS/images organized
-    sourcemap: false, // set true if you want debugging in production
-    rollupOptions: {
-      output: {
-        manualChunks: undefined, // avoids too many small chunks
-      },
-    },
+  css: {
+    postcss: "./postcss.config.js", // Let Vite use PostCSS config
   },
-  server: {
-    port: 3000, // local dev port
-    open: true,
-  },
+  // ... rest of your config
 });
