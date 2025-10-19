@@ -30,8 +30,8 @@ const MainLayout = () => {
   }, []);
 
   return (
-    <div>
-      <div ref={headerRef}>
+    <div className="relative w-full">
+      <div ref={headerRef} className="sticky top-0 bg-white z-50">
         <Navbar />
       </div>
       <div

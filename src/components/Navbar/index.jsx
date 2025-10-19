@@ -1,14 +1,16 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Print2LeadLogo from "../../assets/print2lead_logo.svg";
-import Menu from "./components/menu";
 import Contact from "./components/contact";
+import Menu from "./components/menu";
 
 const Navbar = () => {
   return (
-    <div className="w-full p-3 border-b border-gray-300">
+    <div className="w-full p-3 border-b border-gray-300 ">
       <div className="container mx-auto flex items-center justify-between">
         <div className="w-48">
-          <img className="w-full" src={Print2LeadLogo} alt="" />
+          <Link to="/">
+            <img className="w-full" src={Print2LeadLogo} alt="" />
+          </Link>
         </div>
         <Menu />
         <Contact />

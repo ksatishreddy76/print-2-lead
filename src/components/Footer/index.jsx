@@ -8,11 +8,11 @@ const Footer = () => {
         <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 ">
           <div className="col-span-2 pt-3">
             <p className="font-semibold mb-3">
-              You need it. We print it. You love it.
+              You dream it. We print it. You lead with it.
             </p>
             <p className="text-sm">
-              <div className="w-fit">
-                VistaPrint is here to help every step of the way.
+              <div className="w-fit ">
+                Print2Lead — where every print builds your legacy.
                 <hr className="border-gray-500 mt-8" />
               </div>
             </p>
@@ -26,16 +26,24 @@ const Footer = () => {
             <p className="font-semibold mb-3 text-base">Our Company</p>
             <ul className="flex flex-col items-start gap-2">
               <li>
-                <Link className="hover:text-orange-600 text-sm ">Products</Link>
+                <Link to="/products" className="hover:text-orange-600 text-sm ">
+                  Products
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-orange-600 text-sm ">About</Link>
+                <Link to="/about" className="hover:text-orange-600 text-sm ">
+                  About
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-orange-600 text-sm ">Services</Link>
+                <Link to="/services" className="hover:text-orange-600 text-sm ">
+                  Services
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-orange-600 text-sm ">Contact</Link>
+                <Link to="/contact" className="hover:text-orange-600 text-sm ">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
