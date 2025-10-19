@@ -7,6 +7,18 @@
 :root {
   /* Set base font size */
   font-size: 16px;
+  --primary-color: #3498ff;
+  --secondary-color: #ff6347;
+  --background-color: #f0f0f0;
+  --text-color: #333333;
+
+  /* Footer styles */
+  --footer-background: #2f3a53;
+  --footer-color: #ffffff;
+
+  /* Footer base styles */
+  --footer-base-background: #000000;
+  --footer-base-color: #ffffff;
 }
 
 * {
@@ -134,4 +146,16 @@ u {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.footer-bg {
+  background-color: var(--footer-background);
+  color: var(--footer-color);
+  padding: 40px 25px;
+}
+
+.footer-base {
+  background-color: var(--footer-base-background);
+  color: var(--footer-base-color);
+  padding: 10px 15px;
 }
