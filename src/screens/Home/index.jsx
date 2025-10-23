@@ -1,5 +1,6 @@
 import React from "react";
 import MainSlideImage from "../../assets/main-slide-image.jpg";
+import Invoice from "../Invoice";
 
 const Home = () => {
   return (
@@ -26,16 +27,11 @@ const Home = () => {
                 Your one-stop solution for all your printing needs.
               </p>
               <p className="mt-4 text-justify max-w-[600px] mb-6">
-                At Print2Lead, we specialize in delivering high-quality printed
-                materials that help your business stand out. From business cards
-                and brochures to banners and custom merchandise, we offer a wide
-                range of products tailored to meet your unique requirements. Our
-                state-of-the-art printing technology ensures vibrant colors and
-                sharp details, while our team of experts is dedicated to
-                providing exceptional customer service. Whether you're a small
-                business owner or a large corporation, we are here to help you
-                make a lasting impression. Explore our services and let
-                Print2Lead be your trusted printing partner.
+                Print2Lead delivers premium printing solutions to help your
+                business stand out. From business cards and brochures to banners
+                and custom merchandise, we combine advanced printing technology
+                with expert service to ensure vibrant, high-quality results for
+                every need.
               </p>
             </div>
           </div>

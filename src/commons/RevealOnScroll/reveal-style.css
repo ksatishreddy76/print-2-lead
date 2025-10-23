@@ -1,0 +1,37 @@
+.reveal-wrapper {
+  opacity: 0;
+  transition:
+    opacity var(--reveal-duration) ease-out var(--reveal-delay),
+    transform var(--reveal-duration) ease-out var(--reveal-delay);
+  will-change: opacity, transform;
+}
+
+/* Initial states based on direction */
+.reveal-wrapper[data-direction="left"] {
+  transform: translateX(calc(-1 * var(--reveal-distance)));
+}
+
+.reveal-wrapper[data-direction="right"] {
+  transform: translateX(var(--reveal-distance));
+}
+
+.reveal-wrapper[data-direction="top"] {
+  transform: translateY(calc(-1 * var(--reveal-distance)));
+}
+
+.reveal-wrapper[data-direction="bottom"] {
+  transform: translateY(var(--reveal-distance));
+}
+
+/* Visible state - applies to all directions */
+.reveal-wrapper[data-visible="true"] {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Optional: Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-wrapper {
+    transition-duration: 0.01ms !important;
+  }
+}

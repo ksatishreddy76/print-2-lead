@@ -1,0 +1,21 @@
+.a4-container {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10px auto;
+  background: white;
+  padding: 10mm;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+@media print {
+  body {
+    background: none;
+  }
+  .a4-container {
+    margin: 0;
+    box-shadow: none;
+    width: 210mm;
+    min-height: 297mm;
+    page-break-after: always;
+  }
+}

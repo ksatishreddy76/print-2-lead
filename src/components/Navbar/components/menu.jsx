@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Menu = () => {
+  const windowWidth = window.innerWidth;
+
   const location = useLocation();
 
   const menus = [
@@ -12,6 +14,7 @@ const Menu = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  // if (windowWidth < 1024) {
   return (
     <ul className="flex items-center gap-6">
       {menus.map((menu, idx) => (

@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
+import Portfolio from "./components/Portfolio";
 
 const Home = React.lazy(() => import("./screens/Home"));
 const Products = React.lazy(() => import("./screens/Products"));
@@ -51,6 +52,14 @@ const Routes = () => {
           element: (
             <Suspense fallback={<div>Loading...</div>}>
               <Contact />
+            </Suspense>
+          ),
+        },
+        {
+          path: "profile",
+          element: (
+            <Suspense fallback={<div>Loading...</div>}>
+              <Portfolio />
             </Suspense>
           ),
         },

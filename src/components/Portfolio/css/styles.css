@@ -1,0 +1,174 @@
+:root {
+  --bg-color: #f9f9f9;
+  --txt-color: #f9f9f9;
+  --secondary-bg-color: #f9f9f9;
+  --secondary-txt-color: #f9f9f9;
+
+  --gradient-bg: linear-gradient(90deg, #ff7e5f, #feb47b);
+  --txt-gradient: #333333;
+  --secondary-gradient-bg: linear-gradient(90deg, #333, #777);
+  --secondary-txt-gradient: #ffffff;
+
+  --outlined-btn: transparent;
+  --outlined-btn-clr: #000000;
+  --filled-btn: #f2f2f2;
+  --filled-btn-clr: #000000;
+  --gradient-btn: linear-gradient(90deg, #ff7e5f, #feb47b);
+  --gradient-btn-clr: #ffffff;
+
+  --menu-bg: #ffffff;
+  --menu-clr: #333333;
+  --menu-list-clr: #333333;
+  --menu-list-bg: #ffffff;
+  --menu-list-hover-bg: #f2f2f2;
+  --menu-list-hover-clr: #000000;
+
+  /* Responsive Font Sizes (xs → 5xl) */
+  --font-size-xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem); /* 11–12px */
+  --font-size-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.875rem); /* 13–14px */
+  --font-size-base: clamp(0.95rem, 0.9rem + 0.4vw, 1rem); /* 15–16px */
+  --font-size-lg: clamp(1.05rem, 1rem + 0.5vw, 1.125rem); /* 17–18px */
+  --font-size-xl: clamp(1.2rem, 1.1rem + 0.6vw, 1.25rem); /* 19–20px */
+  --font-size-2xl: clamp(1.4rem, 1.25rem + 0.8vw, 1.5rem); /* 22–24px */
+  --font-size-3xl: clamp(1.7rem, 1.5rem + 1vw, 1.875rem); /* 27–30px */
+  --font-size-4xl: clamp(2rem, 1.75rem + 1.5vw, 2.25rem); /* 32–36px */
+  --font-size-5xl: clamp(2.5rem, 2rem + 2vw, 3rem); /* 40–48px */
+  --font-size-6xl: clamp(4rem, 3rem + 2.5vw, 4rem); /* 40–48px */
+}
+
+:root[data-theme="dark"] {
+  --bg-color: #f9f9f9;
+  --txt-color: #f9f9f9;
+  --secondary-bg-color: #f9f9f9;
+  --secondary-txt-color: #f9f9f9;
+
+  --gradient-bg: linear-gradient(90deg, #ff7e5f, #feb47b);
+  --txt-gradient: #333333;
+  --secondary-gradient-bg: linear-gradient(90deg, #dfdfdf, #ffffff);
+  --secondary-txt-gradient: #ffffff;
+
+  --outlined-btn: transparent;
+  --outlined-btn-clr: #d1d5db;
+  --filled-btn: #f2f2f2;
+  --filled-btn-clr: #000000;
+  --gradient-btn: linear-gradient(90deg, #ff7e5f, #feb47b);
+  --gradient-btn-clr: #ffffff;
+
+  --menu-bg: #ffffff;
+  --menu-clr: #333333;
+  --menu-list-clr: #333333;
+  --menu-list-bg: #ffffff;
+  --menu-list-hover-bg: #f2f2f2;
+  --menu-list-hover-clr: #000000;
+
+  /* Responsive Font Sizes (xs → 5xl) */
+  --font-size-xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem); /* 11–12px */
+  --font-size-sm: clamp(0.8rem, 0.75rem + 0.3vw, 0.875rem); /* 13–14px */
+  --font-size-base: clamp(0.95rem, 0.9rem + 0.4vw, 1rem); /* 15–16px */
+  --font-size-lg: clamp(1.05rem, 1rem + 0.5vw, 1.125rem); /* 17–18px */
+  --font-size-xl: clamp(1.2rem, 1.1rem + 0.6vw, 1.25rem); /* 19–20px */
+  --font-size-2xl: clamp(1.4rem, 1.25rem + 0.8vw, 1.5rem); /* 22–24px */
+  --font-size-3xl: clamp(1.7rem, 1.5rem + 1vw, 1.875rem); /* 27–30px */
+  --font-size-4xl: clamp(2rem, 1.75rem + 1.5vw, 2.25rem); /* 32–36px */
+  --font-size-5xl: clamp(2.5rem, 2rem + 2vw, 3rem); /* 40–48px */
+  --font-size-6xl: clamp(4rem, 3rem + 2.5vw, 4rem); /* 40–48px */
+}
+
+.port-bg {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+}
+.port-secondary-bg {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-txt-color);
+}
+.port-gradient-bg {
+  background: var(--gradient-bg);
+  color: var(--txt-color);
+}
+.port-txt-gradient {
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.port-secondary-txt-gradient {
+  background: var(--secondary-gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.port-secondary-bg-gradient {
+  background: var(--secondary-gradient-bg);
+}
+.port-gradient-btn {
+  background: var(--gradient-btn);
+  color: var(--gradient-btn-clr);
+}
+.port-outlined-btn {
+  background: var(--outlined-btn);
+  color: var(--outlined-btn-clr);
+  border: 1px solid var(--primary-border-color);
+}
+.bold-border {
+  border: 4px solid var(--primary-border-color);
+}
+.port-filled-btn {
+  background: var(--filled-btn);
+  color: var(--filled-btn-clr);
+}
+.port-gradient-btn:hover {
+  opacity: 0.9;
+}
+.port-filled-btn:hover {
+  opacity: 0.9;
+}
+
+/* Text size utility classes */
+
+.text-xs {
+  font-size: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem) !important;
+}
+.text-sm {
+  font-size: clamp(0.8rem, 0.75rem + 0.3vw, 0.875rem) !important;
+}
+.text-base {
+  font-size: clamp(0.95rem, 0.9rem + 0.4vw, 1rem) !important;
+}
+.text-lg {
+  font-size: clamp(1.05rem, 1rem + 0.5vw, 1.125rem) !important;
+}
+.text-xl {
+  font-size: clamp(1.2rem, 1.1rem + 0.6vw, 1.25rem) !important;
+}
+.text-2xl {
+  font-size: clamp(1.4rem, 1.25rem + 0.8vw, 1.5rem) !important;
+}
+.text-3xl {
+  font-size: clamp(1.7rem, 1.5rem + 1vw, 1.875rem) !important;
+}
+.text-4xl {
+  font-size: clamp(2rem, 1.75rem + 1.5vw, 2.25rem) !important;
+}
+.text-5xl {
+  font-size: clamp(2.5rem, 2rem + 2vw, 3rem) !important;
+}
+.text-6xl {
+  font-size: clamp(4.5rem, 4rem + 4vw, 5rem) !important;
+}
+
+/* Additional menu utility classes */
+
+.menu-bg {
+  background-color: var(--menu-bg);
+  color: var(--menu-clr);
+}
+
+.menu-list-bg {
+  background-color: var(--menu-list-bg);
+  color: var(--menu-list-clr);
+  padding: 0.5rem 1rem;
+}
+
+.menu-list-hover-bg:hover {
+  background-color: var(--menu-list-hover-bg);
+  color: var(--menu-list-hover-clr);
+}

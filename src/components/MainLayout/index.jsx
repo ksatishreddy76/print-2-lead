@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import Portfolio from "../Portfolio";
 
 const MainLayout = () => {
   const headerRef = useRef(null);
@@ -31,9 +32,12 @@ const MainLayout = () => {
 
   return (
     <div className="relative w-full">
-      <div ref={headerRef} className="sticky top-0 bg-white z-50">
-        <Navbar />
-      </div>
+      {location.pathname !== "/profile" && (
+        <div ref={headerRef} className="sticky top-0 bg-white z-50">
+          <Navbar />
+        </div>
+      )}
+
       <div
         style={{
           minHeight: `${contentHeight}px`,
@@ -41,9 +45,11 @@ const MainLayout = () => {
       >
         <Outlet />
       </div>
-      <div ref={footerRef}>
-        <Footer />
-      </div>
+      {location.pathname !== "/profile" && (
+        <div ref={footerRef}>
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
