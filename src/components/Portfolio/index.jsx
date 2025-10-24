@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScrollTop = () => {
-      if (window.scrollY > 75) {
+      if (window.scrollY > 80) {
         setUpIconVision(true);
       } else {
         setUpIconVision(false);
@@ -51,7 +51,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="w-full relative" ref={homeRef}>
+    <div className="w-full relative">
       <Navbar
         homeRef={homeRef}
         aboutRef={aboutRef}
@@ -62,19 +62,23 @@ const Portfolio = () => {
         scrollTo={scrollTo}
         upIconVision={upIconVision}
       />
-      <div style={{ position: "unset" }}>
+      <div
+        ref={homeRef}
+        className="overflow-hidden"
+        style={{ position: "unset" }}
+      >
         <UserContent />
       </div>
-      <section ref={aboutRef} className="py-20">
+      <section ref={aboutRef} className="py-20 overflow-hidden">
         <About />
       </section>
-      <section ref={experienceRef} className="py-20">
+      <section ref={experienceRef} className="py-20 overflow-hidden">
         <Experience />
       </section>
-      <section ref={skillsRef} className="py-20">
+      <section ref={skillsRef} className="py-20 overflow-hidden">
         <Skills />
       </section>
-      <section ref={contactRef} className="py-20">
+      <section ref={contactRef} className="py-20 overflow-hidden">
         <Contact />
       </section>
       <section ref={footerRef} className="">

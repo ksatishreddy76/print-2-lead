@@ -168,6 +168,11 @@
   padding: 0.5rem 1rem;
 }
 
+.menu-list-hover-bg.active {
+  background-color: var(--menu-list-hover-bg);
+  color: var(--menu-list-hover-clr);
+}
+
 .menu-list-hover-bg:hover {
   background-color: var(--menu-list-hover-bg);
   color: var(--menu-list-hover-clr);
