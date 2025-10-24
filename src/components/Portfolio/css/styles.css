@@ -152,7 +152,7 @@
   font-size: clamp(2.5rem, 2rem + 2vw, 3rem) !important;
 }
 .text-6xl {
-  font-size: clamp(4.5rem, 4rem + 4vw, 5rem) !important;
+  font-size: clamp(3rem, 3rem + 4vw, 5rem) !important;
 }
 
 /* Additional menu utility classes */

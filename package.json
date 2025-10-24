@@ -10,6 +10,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "format": "^0.2.2",
     "lucide-react": "^0.546.0",
     "prettier": "^3.6.2",

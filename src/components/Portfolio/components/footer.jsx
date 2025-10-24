@@ -59,7 +59,7 @@ const Footer = () => {
           <div className="flex items-center justify-center sm:justify-end">
             <div className="flex flex-col items-start gap-1">
               <span className="text-base font-semibold mb-0">
-                © 2025 Ahmed Allali
+                © 2025 Satish Reddy
               </span>{" "}
               <span className="text-sm">Frontend React Developer</span>
             </div>

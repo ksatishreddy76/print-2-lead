@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomButton from "../../../commons/CustomButton";
 import { Linkedin, Github, Twitter } from "lucide-react";
 import RevealOnScroll from "../../../commons/RevealOnScroll";
 
 const UserContent = () => {
+  const [loading, setLoading] = useState(false);
   const iconSize = 22;
   const socialLinks = [
     {
@@ -19,6 +20,17 @@ const UserContent = () => {
       icon: <Twitter size={iconSize} />,
     },
   ];
+
+  const handleDownload = () => {
+    setLoading(true);
+    const link = document.createElement("a");
+    link.href = "/resume-kolanu-satish-reddy.pdf"; // path relative to public/
+    link.download = "resume-kolanu-satish-reddy.pdf"; // custom filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setLoading(false);
+  };
 
   return (
     <div className="w-full">
@@ -50,8 +62,22 @@ const UserContent = () => {
             Single-spa.
           </RevealOnScroll>
           <div className="flex flex-col md:flex-row items-center gap-2">
-            <CustomButton variant="gradient">Explore My Universe</CustomButton>
-            <CustomButton variant="filled">Download Universe</CustomButton>
+            <CustomButton
+              onClick={() =>
+                window.open("/resume-kolanu-satish-reddy.pdf", "_blank")
+              }
+              variant="gradient"
+            >
+              View My Resume
+            </CustomButton>
+            <CustomButton
+              className={`${loading ? "opacity-50" : "opacity-100"}`}
+              variant="filled"
+              onClick={handleDownload}
+              disabled={loading}
+            >
+              Download Resume
+            </CustomButton>
           </div>
           <div className="text-sm animate-pulse mt-5 port-secondary-txt-gradient    ">
             Scroll to explore more

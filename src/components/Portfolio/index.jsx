@@ -19,16 +19,16 @@ const Portfolio = () => {
       <section>
         <UserContent />
       </section>
-      <section className="py-16 min-h-screen">
+      <section className="py-20">
         <About />
       </section>
-      <section className="py-16 min-h-screen">
+      <section className="py-20">
         <Experience />
       </section>
-      <section className="py-16 min-h-screen">
+      <section className="py-20">
         <Skills />
       </section>
-      <section className="py-16 min-h-screen">
+      <section className="py-20">
         <Contact />
       </section>
       <section className="">

@@ -64,7 +64,7 @@ const Navbar = () => {
           </RevealOnScroll>
           <RevealOnScroll
             direction="right"
-            className="secondary-bg border-primary rounded-full p-2 flex items-center justify-center"
+            className="secondary-bg border-primary rounded-full p-2 flex items-center justify-center z-30"
           >
             {isLaptop ? (
               <>
