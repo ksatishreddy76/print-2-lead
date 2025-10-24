@@ -40,7 +40,7 @@
   --bg-color: #f9f9f9;
   --txt-color: #f9f9f9;
   --secondary-bg-color: #f9f9f9;
-  --secondary-txt-color: #f9f9f9;
+  --secondary-txt-color: #333333;
 
   --gradient-bg: linear-gradient(90deg, #ff7e5f, #feb47b);
   --txt-gradient: #333333;

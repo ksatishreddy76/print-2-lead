@@ -5,7 +5,7 @@ const useTheme = () => {
 
   function toggleTheme() {
     const root = document.documentElement;
-    const current = root.getAttribute("data-theme") || "light";
+    const current = root.getAttribute("data-theme") || "dark";
     const next = current === "dark" ? "light" : "dark";
     setCurrentTheme(next);
     root.setAttribute("data-theme", next);
@@ -13,7 +13,7 @@ const useTheme = () => {
   }
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "dark";
     setCurrentTheme(savedTheme);
     document.documentElement.setAttribute("data-theme", savedTheme);
   }, []);

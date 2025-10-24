@@ -151,7 +151,7 @@ const Contact = () => {
               />
               <button
                 type="submit"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-colors"
+                className="port-gradient-btn group font-semibold py-3 px-6 rounded-md transition-colors"
               >
                 Send Message
               </button>
