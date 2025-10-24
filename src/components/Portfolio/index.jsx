@@ -9,6 +9,7 @@ import Experience from "./components/experience";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
+import EmailLoader from "../../commons/EmailLoader";
 
 const Portfolio = () => {
   const { currentTheme, toggleTheme } = useTheme();

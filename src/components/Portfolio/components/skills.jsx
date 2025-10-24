@@ -112,7 +112,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 items-center justify-center gap-6 mt-8">
           {(tools || []).map((item) => {
             return (
-              <div className="hover:scale-[1.03] group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg transition-all duration-300 relative overflow-hidden flex flex-col items-center justify-center py-4">
+              <div className="border-primary hover:scale-[1.03] group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg transition-all duration-300 relative overflow-hidden flex flex-col items-center justify-center py-4">
                 <div className={item.className}></div>
                 <img
                   className="max-w-12 group-hover:rotate-[360deg] transition-all duration-500"
