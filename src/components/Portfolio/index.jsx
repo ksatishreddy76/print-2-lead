@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScrollTop = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 300) {
         setUpIconVision(true);
       } else {
         setUpIconVision(false);
@@ -52,16 +52,34 @@ const Portfolio = () => {
 
   return (
     <div className="w-full relative">
-      <Navbar
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        experienceRef={experienceRef}
-        skillsRef={skillsRef}
-        contactRef={contactRef}
-        footerRef={footerRef}
-        scrollTo={scrollTo}
-        upIconVision={upIconVision}
-      />
+      <div
+        className={`h-0 z-50 transition-all duration-300 ${upIconVision ? "opacity-100 translate-y-0 sticky top-0" : "opacity-0 -translate-y-20  sticky -top-20"}`}
+      >
+        <Navbar
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          experienceRef={experienceRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+          footerRef={footerRef}
+          scrollTo={scrollTo}
+          upIconVision={upIconVision}
+        />
+      </div>
+
+      <div>
+        <Navbar
+          homeRef={homeRef}
+          aboutRef={aboutRef}
+          experienceRef={experienceRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+          footerRef={footerRef}
+          scrollTo={scrollTo}
+          upIconVision={upIconVision}
+        />
+      </div>
+
       <div
         ref={homeRef}
         className="overflow-hidden"

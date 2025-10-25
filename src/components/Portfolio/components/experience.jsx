@@ -9,7 +9,7 @@ const Experience = () => {
   const experienceData = [
     {
       role: "Frontend Developer",
-      company: "Proounce Solution Pvt. Ltd.",
+      company: "Proounce Solutions Pvt. Ltd.",
       duration: "2023-Present",
       performedTasks: [
         "I worked on creating financial data tables and analytics modules with Single-SPA apps hosted across different servers.",
@@ -86,8 +86,9 @@ const Experience = () => {
             return (
               <RevealOnScroll
                 direction={index % 2 ? "left" : "right"}
-                className={`bg-white/5 backdrop-blur-sm mb-8 border-primary hover:scale-[1.01] rounded-xl md:rounded-2xl p-4 md:p-8 ${currentTheme === "dark" ? "hover:bg-white/10" : "hover:bg-gray-50"} transition-all duration-300 relative overflow-hidden h-full flex flex-col`}
+                className={`bg-white/5 backdrop-blur-sm mb-8 border-primary hover:scale-[1.01] rounded-xl md:rounded-2xl p-4 md:p-8 hover:bg-white/10  transition-all duration-300 relative overflow-hidden h-full flex flex-col`}
               >
+                {/* ${currentTheme === "dark" ? "hover:bg-white/10" : "hover:bg-gray-50"} */}
                 <h3 className="mb-2 port-txt-gradient text-left text-3xl">
                   {item.role || ""}
                 </h3>
