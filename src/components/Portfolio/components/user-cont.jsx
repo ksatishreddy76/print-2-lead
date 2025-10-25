@@ -34,7 +34,7 @@ const UserContent = () => {
 
   return (
     <div className="w-full">
-      <div className="container mx-auto px-4 py-10 flex flex-col items-center min-h-[70vh]">
+      <div className="container mx-auto px-4 py-10 flex flex-col items-center ">
         <div className="flex items-center flex-col justify-center text-center">
           <CustomButton variant="outlined">Welcome to My Universe</CustomButton>
           <RevealOnScroll
