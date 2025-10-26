@@ -56,7 +56,7 @@ const Routes = () => {
           ),
         },
         {
-          path: "profile",
+          path: "my-profile",
           element: (
             <Suspense fallback={<div>Loading...</div>}>
               <Portfolio />

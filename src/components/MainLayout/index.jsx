@@ -32,7 +32,7 @@ const MainLayout = () => {
 
   return (
     <div className="relative w-full">
-      {location.pathname !== "/profile" && (
+      {location.pathname !== "/my-profile" && (
         <div ref={headerRef} className="sticky top-0 bg-white z-50">
           <Navbar />
         </div>
@@ -45,7 +45,7 @@ const MainLayout = () => {
       >
         <Outlet />
       </div>
-      {location.pathname !== "/profile" && (
+      {location.pathname !== "/my-profile" && (
         <div ref={footerRef}>
           <Footer />
         </div>
